@@ -5,8 +5,9 @@ body {
     transition: background-color 0.3s, color 0.3s;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 
 .dark-mode {
@@ -44,16 +45,25 @@ nav a:hover {
 
 main {
     max-width: 800px;
-    flex-grow: 1; /* Allows the main to take remaining vertical space */
+    flex-grow: 1;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
     margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 section {
     margin-bottom: 20px;
+    text-align: left;
+}
+
+ul {
+    list-style-position: inside;
 }
 
 .widget-section {
@@ -79,3 +89,9 @@ section {
     font-size: 16px;
     margin: 0;
 }
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+}
+
