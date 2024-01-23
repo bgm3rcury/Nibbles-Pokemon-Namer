@@ -5,9 +5,8 @@ body {
     transition: background-color 0.3s, color 0.3s;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
+    align-items: center;
 }
 
 .dark-mode {
@@ -16,8 +15,9 @@ body {
 }
 
 header, main, footer {
-    text-align: center;
     width: 100%;
+    text-align: center;
+    padding: 1em 0;
 }
 
 nav ul {
@@ -44,6 +44,7 @@ nav a:hover {
 
 main {
     max-width: 800px;
+    flex-grow: 1; /* Allows the main to take remaining vertical space */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
