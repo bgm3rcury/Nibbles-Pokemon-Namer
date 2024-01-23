@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Your Website</title>
 </head>
-<body>
+<body class="light-mode">
     <header>
-        <h1>Home</h1>
+        <h1>Your Website</h1>
+        <button id="modeToggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
         <nav>
             <ul>
                 <li><a href="terms.html">Terms of Service</a></li>
@@ -19,7 +20,7 @@
 
     <main>
         <section>
-            <h2>Nibbles Pokémon Namer</h2>
+            <h2>Welcome to our Terms of Service</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
         </section>
     </main>
@@ -27,5 +28,7 @@
     <footer>
         <p>&copy; 2024 Your Website. All rights reserved.</p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
