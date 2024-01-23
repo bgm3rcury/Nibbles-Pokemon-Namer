@@ -1,3 +1,5 @@
+/* Common styles for all screen sizes */
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -95,3 +97,24 @@ footer {
     padding: 1em 0;
 }
 
+/* Media queries for responsive layout */
+
+@media only screen and (max-width: 768px) {
+    /* Adjust styles for screens smaller than 768px (e.g., tablets and mobiles) */
+
+    main {
+        padding: 15px;
+    }
+
+    header, main, footer {
+        padding: 0.5em 0;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    .widget-container img {
+        max-width: 200px;
+    }
+}
